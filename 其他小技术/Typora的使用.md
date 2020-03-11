@@ -1,6 +1,6 @@
-# Typora
+#                                    Typora
 
-## 第二节：基本带快捷键的Markdown书写演示
+## 第一节：基本带快捷键的Markdown书写演示
 
 `ctrl0`到`ctrl4`:从普通文本，一级标题到四级标题
 
@@ -26,7 +26,7 @@
 |      |      |      |
 |      |      |      |
 
-`ctrl  shift Q`:应用：
+`ctrl  shift Q`:引用：
 
 > 岁月静好
 
@@ -39,18 +39,21 @@ $$
 a*b=c
 $$
 
-## 基本的不带Markdown的书写演示
+
+
+## 第二节：基本的不带Markdown的书写演示
 
 **代码块儿**：
 
 ```python
 #hello world
 print("hello world")
+**无序**，**有序的列表书写**（略，同markdown语法）:
 ```
 
-**无序**，**有序的列表书写**（略，同markdown语法）:
+**无序**，**有序的引用**
 
-**引用**：
+引用：
 
 > 这是一段话。[^1]
 >
@@ -60,11 +63,57 @@ print("hello world")
 
 **高亮**：==本段不考==
 
-**内联公式**：$s$
-
-**图标**：`：单词`，:arrow_up_small:up图标
-
-改变标题的方法
+**内联公式**：$s$**图标**：`：单词`，:arrow_up_small:up图标
 
 
+
+## 第三节：markdown的拓展功能
+
+**html的原生支持**：目前只支持`img`标签
+
+```html
+<img src="https://tse3-mm.cn.bing.net/th/id/OIP.D3q_LeiUKiLaPMJL2KUtxgHaEK?w=300&h=168&c=7&o=5&dpr=1.25&pid=1.7" width="600px" alt="test"></img>
+```
+
+
+
+
+
+<img src="https://tse3-mm.cn.bing.net/th/id/OIP.D3q_LeiUKiLaPMJL2KUtxgHaEK?w=300&h=168&c=7&o=5&dpr=1.25&pid=1.7" width="600px" alt="test"></img>
+
+**LeTex公式的支持**：包括mhchem, AMSsmth, BBox:(详细语法可查官方文档)
+
+**流程图**：内置了 Flowchart, Sequence, Mermaid引擎。 支持多种流程图、时序图、甘特图。
+
+- 流程图（ Flowchart）
+
+  ```flow
+  
+  ```
+
+- 流程图（Mermaid）
+
+  ```mermaid
+  
+  ```
+
+  
+
+- 时序图（sequence）
+
+- 甘特图（Mermaid）
+
+  
+
+## 第四节：主题替换
+
+访问：[“http://theme.typora.io/”](http://theme.typora.io/)
+
+## 第五节：导出
+
+图片导出：（适合手机）
+
+pdf导出：
+
+html导出：（适合网页）
 
