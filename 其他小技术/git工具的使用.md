@@ -158,4 +158,49 @@
         8.  `git remote add origin_ssh [shh的地址]`增加本地库的remote,ssh地址
         9.  `git push origin_ssh master`推送到远程库
 ## 四：git图形化界面操作
-## 五：Gitlab服务器环境搭建
+
+(各自IDE不同，故不再详细介绍)
+
+## 五：git工作流
+
+### git工作流分类：
+
+- **集中式**：基本上只是将git当作云端代码仓库。所有人都只使用一个分支。
+
+  ![image-20200311184913273](git工具的使用.assets/image-20200311184913273.png)
+
+- **Gitflow****工作流**（推荐）：不同功能分配不同分支，方便发布迭代。
+
+  ![image-20200311185133998](git工具的使用.assets/image-20200311185133998.png)
+
+- **Forking工作流**：在gitflow基础上，充分利用pull request功能，能接受不信任者的提交。
+
+- ![image-20200311185621917](git工具的使用.assets/image-20200311185621917.png)
+
+  
+
+### gitflow工作流的介绍：
+
+- **分支种类**
+
+  - 主干分支`master`
+
+  - 开发分支`develope`
+
+  - bug修理分支 `hotfix`
+
+  - 预发布分支 `relase`: 发布前的测试。
+
+  - 功能分支 `featurn`
+
+    ![image-20200311191231977](git工具的使用.assets/image-20200311191231977.png)
+
+
+
+
+
+## 六：资源申明：
+
+本笔记原视频网站：[https://www.bilibili.com/video/av24441039?p=54](https://www.bilibili.com/video/av24441039?p=54)
+
+感谢"尚硅谷GitHub教程"
