@@ -76,8 +76,44 @@ def find_cards():
             print("="*80)
             print("%s\t\t%s\t\t%s\t\t%s"%(i["姓名"], i["电话"], i["邮箱"], i["地址"]))           
             print("="*80)
+            del_card(i)
             break
     else:
         print("此列表中无%s"%(find_name))    
+
+def del_card(dict_card):
+    """查找到后要进行的操作"""
+
+    #1. 提示信息，并输入
+    action_str = input("请选择要执行的操作：【1】修改 【2】删除 【3】返回上级菜单")
+
+    #2. 条件语句，判断选择
+    # 修改
+    if action_str == "1":
+        dict_card["姓名"] = change_card("姓名", dict_card["姓名"])
+        dict_card["电话"] = change_card("电话", dict_card["电话"])
+        dict_card["邮箱"] = change_card("邮箱", dict_card["邮箱"])
+        dict_card["地址"] = change_card("地址", dict_card["地址"])
+
+    # 删除
+    elif action_str == "2":
+        card_list.remove(dict_card)
+    
+    # 返回上一级菜单
+    else:
+        return
+
+def change_card(in_value, original):
+    """在修改命令中通过回车跳过不修改的项目"""
+
+    # 1.提示，输入
+    choice = input(in_value)
+
+    # 2.判断输入 
+    if len(choice) > 0:
+        return choice
+    else:
+        return original
+
 
 
