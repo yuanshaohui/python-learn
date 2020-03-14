@@ -70,8 +70,13 @@ def find_cards():
     # 遍历列表，寻找查找的名字。
     for i in card_list:
         if i["姓名"] == find_name:
-            print("ok")
-            return
+            for im in ["姓名", "电话", "邮箱", "地址"]:
+                print(im, end="\t\t")
+            print()
+            print("="*80)
+            print("%s\t\t%s\t\t%s\t\t%s"%(i["姓名"], i["电话"], i["邮箱"], i["地址"]))           
+            print("="*80)
+            break
     else:
         print("此列表中无%s"%(find_name))    
 
