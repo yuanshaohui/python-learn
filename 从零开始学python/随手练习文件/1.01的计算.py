@@ -1,8 +1,6 @@
- def name():
-     # TODO(name) sdfssdfadsf
- 
-    number = 1
-    num = 1.01
-    for i in range(365):
-        number = number * num
-    print(number)
+dict = {
+    "name":"aaaaa",
+    "number":"1243234"
+}
+a = dict.keys(1)
+print(a)

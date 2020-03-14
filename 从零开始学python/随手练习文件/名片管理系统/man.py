@@ -13,16 +13,14 @@ while True:
         if chose == "1":
             tools.new_cards()
             
-        
         # 显示全部名片
         elif chose == "2":
-            # TODO 显示全部 
-            pass
+            tools.all_cards()
+            
 
         # 查询名片
         elif chose == "3":
-            # TODO 查询名片
-            pass
+            tools.find_cards()
 
     # 退出系统    
     elif chose == "0":
