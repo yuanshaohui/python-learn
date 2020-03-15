@@ -20,7 +20,7 @@
   - `activate python34`激活环境
   - `source activate python34`(linux)激活环境
   - `python --version`检测是否已经切换成功环境
-  - `deactivate python34`删除一个已有的环境
+  - `deactivate python34`删除一个已有的环境(退回到默认环境)
   - `source deactivate python34`(linux)删除一个已有的环境
 
 - 安装/卸载第三方包
