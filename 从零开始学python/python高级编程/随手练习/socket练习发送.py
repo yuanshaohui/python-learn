@@ -1,7 +1,7 @@
 '''
 @Author: your name
 @Date: 2020-03-17 23:03:45
-@LastEditTime: 2020-03-18 00:04:08
+@LastEditTime: 2020-03-18 09:43:21
 @LastEditors: Please set LastEditors
 @Description: In User Settings Edit
 @FilePath: \giee\learn_python\从零开始学python\python高级编程\随手练习\socket练习.py
@@ -10,6 +10,9 @@ import socket
 def main():
     # 创建upd套接字
     udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+    # 绑定端口
+    udp_socket.bind(("", 7890))
 
 
     while True:

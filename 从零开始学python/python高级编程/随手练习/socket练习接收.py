@@ -1,7 +1,7 @@
 '''
 @Author: your name
 @Date: 2020-03-17 23:36:45
-@LastEditTime: 2020-03-18 00:21:06
+@LastEditTime: 2020-03-18 09:53:20
 @LastEditors: Please set LastEditors
 @Description: In User Settings Edit
 @FilePath: \giee\learn_python\从零开始学python\python高级编程\随手练习\socket练习接收.py
@@ -13,7 +13,7 @@ def main():
     udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
     # 2. 绑定端口
-    local_addr = ("", 7788)
+    local_addr = ("", 7890)
     udp_socket.bind(local_addr)
 
     # 3. 接收数据
