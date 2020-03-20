@@ -1,7 +1,7 @@
 '''
 @Author: your name
 @Date: 2020-03-20 10:58:47
-@LastEditTime: 2020-03-20 14:20:27
+@LastEditTime: 2020-03-20 15:05:31
 @LastEditors: Please set LastEditors
 @Description: In User Settings Edit
 @FilePath: \giee\learn_python\爬虫\爬虫基础\练习项目\糗事百科案例.py
@@ -21,12 +21,12 @@ def get_html(url):
 
     # 构建代理ip
     # proxies = {
-    #     "http": "60.190.23.50"
+    #     "http": "117.136.106.46"
     # }
 
     # 构建响应
     response = requests.get(url, headers=headers)
-
+    
     # 提取内容
     info = response.text
 
