@@ -1,7 +1,7 @@
 '''
 @Author: your name
 @Date: 2020-03-19 21:24:32
-@LastEditTime: 2020-03-20 10:57:57
+@LastEditTime: 2020-03-20 11:58:39
 @LastEditors: Please set LastEditors
 @Description: In User Settings Edit
 @FilePath: \giee\learn_python\爬虫\爬虫基础\练习项目\正则表达式.py
@@ -22,9 +22,10 @@ s2 = re.search(r"s\w+", strl)
 print(s2.group())
 
 print("---------findall---------")  # 匹配所有
-f1 = re.findall(r"y", strl)
+str = "y"
+f1 = re.findall(r"{}".format(str), strl)
 print(f1)
 
-print("----------sub----------")  # 替换
-su_1 = re.sub(r"***", r"****", strl)
-print(su_1)
+# print("----------sub----------")  # 替换
+# su_1 = re.sub(r"***", r"****", strl)
+# print(su_1)
