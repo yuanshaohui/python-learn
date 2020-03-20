@@ -1,7 +1,7 @@
 '''
 @Author: your name
 @Date: 2020-03-19 20:13:09
-@LastEditTime: 2020-03-19 20:20:26
+@LastEditTime: 2020-03-20 15:00:53
 @LastEditors: Please set LastEditors
 @Description: In User Settings Edit
 @FilePath: \giee\learn_python\爬虫\爬虫基础\练习项目\request库_3.py
@@ -26,7 +26,7 @@ def main():
 
     # 创建代理IP
     proxies = {
-        "http": "60.190.23.50"
+        "http": "http://60.190.23.50"
     }
 
     # 创建返回
